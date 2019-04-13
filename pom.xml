@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.konrader</groupId>
+	<artifactId>unifi-cloudkey-exporter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>unifi-cloudkey-exporter</name>
+	<description>Prometheus exporter that exposes metrics from Ubiquiti UniFi CloudKey</description>
+	<inceptionYear>2019</inceptionYear>
+	<url>https://github.com/konrader/unifi-cloudkey-exporter</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<developers>
+		<developer>
+			<name>Konrad Eriksson</name>
+			<email>konrad@konraderiksson.com</email>
+			<url>https://github.com/konrader</url>
+			<id>konrader</id>
+		</developer>
+	</developers>
+	<scm>
+		<url>https://github.com/konrader/unifi-cloudkey-exporter</url>
+		<connection>scm:git:git://github.com/konrader/unifi-cloudkey-exporter.git</connection>
+		<developerConnection>scm:git:git@github.com:konrader/unifi-cloudkey-exporter.git</developerConnection>
+	</scm>
+	<issueManagement>
+		<url>https://github.com/konrader/unifi-cloudkey-exporter/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>8</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
