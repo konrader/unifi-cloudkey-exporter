@@ -22,8 +22,8 @@
 	</developers>
 	<scm>
 		<url>https://github.com/konrader/unifi-cloudkey-exporter</url>
-		<connection>scm:git:git://github.com/konrader/unifi-cloudkey-exporter.git</connection>
-		<developerConnection>scm:git:git@github.com:konrader/unifi-cloudkey-exporter.git</developerConnection>
+		<connection>scm:git:https://github.com/konrader/unifi-cloudkey-exporter.git</connection>
+		<developerConnection>scm:git:https://konrader@github.com/konrader/unifi-cloudkey-exporter.git</developerConnection>
 	</scm>
 	<issueManagement>
 		<url>https://github.com/konrader/unifi-cloudkey-exporter/issues</url>
