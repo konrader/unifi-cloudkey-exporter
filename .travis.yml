@@ -1,4 +1,12 @@
 language: java
+
+services:
+  - docker
+
 cache:
   directories:
     - $HOME/.m2
+
+before_install:
+  - docker build -t konrader/unifi-cloud-exporter .
+  - docker images
