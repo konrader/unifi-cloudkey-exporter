@@ -10,4 +10,5 @@ cache:
 
 after_script:
   - docker build -t konrader/unifi-cloud-exporter .
-  - docker images
+  - echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USER" --password-stdin
+  - docker push konrader/unifi-cloud-exporter
