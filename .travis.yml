@@ -9,6 +9,6 @@ cache:
     - $HOME/.m2
 
 after_script:
-  - docker build -t konrader/unifi-cloud-exporter .
+  - docker build -t konrader/unifi-cloudkey-exporter .
   - echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USER" --password-stdin
   - docker push konrader/unifi-cloudkey-exporter
