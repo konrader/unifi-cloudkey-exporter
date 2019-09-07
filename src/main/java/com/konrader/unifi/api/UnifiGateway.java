@@ -12,8 +12,8 @@ public class UnifiGateway extends UnifiDevice {
 		setGauge("temperature", parseTemp(jtemps.getString("CPU")), "sensor", "cpu");
 		setGauge("temperature", parseTemp(jtemps.getString("PHY")), "sensor", "phy");
 
-		parseTrafficStat("lan_", jobj.getJSONObject("stat"), "lan-");
-		parseTrafficStat("wan_", jobj.getJSONObject("stat"), "wan-");
+		parseTrafficStat("lan_", jobj.getJSONObject("stat").getJSONObject("gw"), "lan-");
+		parseTrafficStat("wan_", jobj.getJSONObject("stat").getJSONObject("gw"), "wan-");
 	}
 
 	static int parseTemp(String str) {

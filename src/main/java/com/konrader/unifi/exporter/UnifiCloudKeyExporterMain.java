@@ -146,8 +146,7 @@ public class UnifiCloudKeyExporterMain {
 			return;
 		}
 		UniFiManagementPortal ump = new UniFiManagementPortal(args[0], args[1], args[2]);
-		UniFiController ctrl = new UniFiController(args[0]);
-		ctrl.login(args[3], args[4]);
+		UniFiController ctrl = new UniFiController(args[0], args[3], args[4]);
 		new UnifiCloudKeyExporterMain(ump, ctrl);
 	}
 
